@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Privacy policy — Noam-Dalia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body { font-family: system-ui, sans-serif; line-height: 1.55; max-width: 44rem;
+         margin: 0 auto; padding: 1.5rem 1rem 3rem; color: #1b1b1b; background: #fff; }
+  h1 { margin-bottom: .25rem; }
+  h2 { margin-top: 2rem; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #ccc; padding: .4rem .5rem; text-align: left; vertical-align: top; }
+  .meta { color: #555; }
+</style>
+</head>
+<body>
+<!--
+  Source of truth: docs/commercial/privacy-policy.html in the noam-dalia repo
+  (P22). Published as https://imrum.github.io/privacy.html. Edit here, then
+  copy. tests/test_commercial_docs.py checks the processors and retention
+  periods against the code.
+
+  PENDING LEGAL REVIEW (P05) — for the Israeli privacy lawyer:
+  1. Controller vs. processor. The users are a customer organisation's
+     employees (e.g. a hotel's security staff), so the organisation may be the
+     controller and we its processor. This draft avoids naming a controller.
+  2. What notice the customer organisation owes its staff about the access
+     log (workplace monitoring), and whether this page should say so.
+  3. Retention: 365 days for the access log is our choice, not yet confirmed.
+  4. Whether to cite the Israeli Privacy Protection Law and its regulations by
+     name, and any rights wording it requires.
+  5. Operator identity: currently an individual; to become a business name.
+-->
+<h1>Privacy policy</h1>
+<p class="meta">Noam-Dalia gate-access app for Android. Last updated 8 October 2026.
+This policy is under legal review and may be updated.</p>
+
+<h2>1. Who we are</h2>
+<p>
+  Noam-Dalia is operated by Imry Rodkin ("we", "us"). Questions about this
+  policy or your data:
+  <a href="mailto:rodkin.imry@gmail.com">rodkin.imry@gmail.com</a>.
+</p>
+
+<h2>2. Who this applies to</h2>
+<p>
+  The app is used at sites — such as a hotel or a residential building — that
+  have installed gates controlled by Noam-Dalia. Its users are the site's
+  security staff and managers, visitors given a time-limited pass, and the
+  installers who set the gates up. The organisation running the site decides
+  who is given access to its gates.
+</p>
+
+<h2>3. What we collect, and why</h2>
+<table>
+  <tr><th>Data</th><th>Why</th></tr>
+  <tr><td>Your email address</td><td>To sign you in (we email you a one-time code) and to contact you about your account.</td></tr>
+  <tr><td>Your display name</td><td>So site managers can see who has access.</td></tr>
+  <tr><td>Your phone number (optional; managers and installers)</td><td>So the site can reach you. Not shared.</td></tr>
+  <tr><td>Business or tax ID (installers only)</td><td>To identify the installer's business. Not shared.</td></tr>
+  <tr><td>Site memberships, roles and gate permissions</td><td>To decide which gates you may open.</td></tr>
+  <tr><td>Access log: who opened which gate, when, and whether it worked</td><td>The site's security record. Site managers can read their site's log; everyone else can read only their own entries.</td></tr>
+  <tr><td>A gate-network account link</td><td>A random identifier, not a password you chose, that connects your account to the gate network (Tuya). It is held on our server where only our backend can read it, and in your phone's secure storage.</td></tr>
+  <tr><td>Error reports (only if you choose to send them)</td><td>To find out why the app failed. Off by default; you are asked each time unless you turn on automatic sending in Settings. A report holds the app and Android version, the type and code location of the error and the hour it happened — never your name, email, gate, site, location or Wi-Fi network. You can see the full list in the app under Settings &rarr; Privacy &rarr; What's included.</td></tr>
+</table>
+<p>We do not sell your data, use it for advertising, or track you across other apps.</p>
+
+<h2>4. On your phone</h2>
+<ul>
+  <li><strong>Wi-Fi network name and password</strong> — only when an installer adds a new gate device, so the device can join the site's Wi-Fi. They are passed to the device and not stored by us.</li>
+  <li><strong>Location permission</strong> — Android requires it to scan for Wi-Fi networks while pairing a device. It is used only for pairing, never to track where you are.</li>
+  <li><strong>Gate permissions cached for up to 24 hours</strong>, so gates still open when the phone is offline.</li>
+  <li><strong>Your sign-in session</strong>, kept in the phone's secure storage and excluded from phone backups and device transfers. Signing out removes it.</li>
+</ul>
+
+<h2>5. Who processes your data, and where</h2>
+<table>
+  <tr><th>Service</th><th>What it does</th><th>Where</th></tr>
+  <tr><td><a href="https://supabase.com/privacy">Supabase</a> (on Amazon Web Services)</td><td>Hosts our backend: accounts, permissions, the access log and error reports.</td><td>Mumbai, India</td></tr>
+  <tr><td><a href="https://www.tuya.com/privacy">Tuya</a></td><td>Runs the gate network that the app uses to send commands to the gate devices, and the device software. Tuya's SDK inside the app also collects device and network data under Tuya's own privacy policy.</td><td>Central Europe</td></tr>
+  <tr><td><a href="https://www.brevo.com/legal/privacypolicy/">Brevo</a></td><td>Sends the sign-in code emails.</td><td>European Union</td></tr>
+  <tr><td><a href="https://policies.google.com/privacy">Google</a></td><td>Only if you choose "Sign in with Google": confirms your identity and gives us your email address. The app itself is distributed through Google Play.</td><td>Google's infrastructure</td></tr>
+</table>
+<p>
+  The organisation running your site can see its own members, permissions and
+  access log. We share data with nobody else unless the law requires it.
+</p>
+
+<h2>6. How long we keep it</h2>
+<table>
+  <tr><th>Data</th><th>Kept for</th></tr>
+  <tr><td>Access log entries</td><td>365 days, then deleted automatically</td></tr>
+  <tr><td>Error reports</td><td>30 days, then deleted automatically</td></tr>
+  <tr><td>Cached gate permissions on the phone</td><td>24 hours at most</td></tr>
+  <tr><td>Site memberships and permissions</td><td>Until the site removes you, or you delete your account</td></tr>
+  <tr><td>Account and profile</td><td>Until you delete your account</td></tr>
+</table>
+<p>
+  When you delete your account, your profile, memberships, permissions and
+  gate-network link are removed. Access log entries you were part of are kept
+  until their 365 days run out, with your name and account removed from them.
+  How to delete: <a href="account-deletion.html">Delete your account</a>.
+</p>
+
+<h2>7. Your choices and rights</h2>
+<ul>
+  <li><strong>See and correct</strong> your data: email us and we will send you a copy or correct it.</li>
+  <li><strong>Delete</strong> your account at any time from Settings &rarr; Delete account, or by email (see <a href="account-deletion.html">Delete your account</a>).</li>
+  <li><strong>Error reports</strong>: turn automatic sending on or off in Settings &rarr; Privacy.</li>
+  <li>If your access was given by your employer, some requests may also need to go through them, since they decide who has access to their site.</li>
+</ul>
+
+<h2>8. Security</h2>
+<p>
+  Data travels over encrypted connections. Access to each table on our server
+  is restricted to the people who need it, the gate-network link can be read
+  only by our backend, and the app stores its session in the phone's secure
+  storage. No system is perfectly secure; if we learn of a breach affecting
+  your data we will tell you.
+</p>
+
+<h2>9. Children</h2>
+<p>The app is a workplace and building-access tool and is not directed at children.</p>
+
+<h2>10. Changes</h2>
+<p>
+  If we change this policy we will update the date at the top, and for
+  significant changes we will tell you in the app or by email.
+</p>
+
+<h2>11. Contact</h2>
+<p>
+  Imry Rodkin —
+  <a href="mailto:rodkin.imry@gmail.com">rodkin.imry@gmail.com</a>
+</p>
+</body>
+</html>
